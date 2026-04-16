@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(REPLACE_WITH_YOUR_PROJECT_NAME)
+project(mario)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -35,6 +35,30 @@ add_executable(${PROJECT_NAME}
     ${SRC_DIR}/main.cpp
     ${SRC_FILES}
     ${HEADER_FILES}
+        include/Mario.hpp
+        src/Mario.cpp
+        include/Character.hpp
+        src/Character.cpp
+        include/Tile.hpp
+        include/LevelManager.hpp
+        src/LevelManager.cpp
+        include/QuestionBlock.hpp
+        src/Tile.cpp
+        include/EffectManager.hpp
+        include/Brick.hpp
+        src/Brick.cpp
+        include/Definitions.hpp
+        src/EffectManager.cpp
+        src/QuestionBlock.cpp
+        include/Item.hpp
+        include/ItemManager.hpp
+        src/ItemManager.cpp
+        src/Mushroom.cpp
+        src/Coin.cpp
+        include/Enemy.hpp
+        src/Enemy.cpp
+        include/Goomba.hpp
+        src/Goomba.cpp
 )
 
 if(MSVC)

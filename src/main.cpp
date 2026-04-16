@@ -9,6 +9,7 @@ int main(int, char**) {
     while (!context->GetExit()) {
         switch (app.GetCurrentState()) {
             case App::State::START:
+                SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "0");
                 app.Start();
                 break;
 
