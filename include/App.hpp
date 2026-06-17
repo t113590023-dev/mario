@@ -9,6 +9,8 @@
 #include "Tile.hpp"
 #include "LevelManager.hpp"
 #include "ItemManager.hpp"
+#include "GameHUD.hpp"
+#include "SFXManager.hpp"
 
 class App {
 public:
@@ -36,8 +38,9 @@ private:
     std::shared_ptr<LevelManager> m_LevelManager;
     std::shared_ptr<EffectManager> m_EffectManager;
     std::shared_ptr<ItemManager> m_ItemManager;
-
+    std::shared_ptr<SFXManager> m_SFXManager;
     std::shared_ptr<Mario> m_Mario;
+    std::shared_ptr<GameHUD> m_GameHUD;
 
     bool showDemoWindow = true;
 };

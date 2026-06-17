@@ -54,11 +54,25 @@ add_executable(${PROJECT_NAME}
         include/ItemManager.hpp
         src/ItemManager.cpp
         src/Mushroom.cpp
+        src/Starman.cpp
         src/Coin.cpp
         include/Enemy.hpp
         src/Enemy.cpp
         include/Goomba.hpp
         src/Goomba.cpp
+        include/Koopa.hpp
+        src/Koopa.cpp
+        include/GameHUD.hpp
+        src/GameHUD.cpp
+        src/Starman.cpp
+        src/Fireball.cpp
+        src/FireFlower.cpp
+        include/Lift.hpp
+        src/Lift.cpp
+        include/PiranhaPlant.hpp
+        src/PiranhaPlant.cpp
+        include/SFXManager.hpp
+        src/SFXManager.cpp
 )
 
 if(MSVC)

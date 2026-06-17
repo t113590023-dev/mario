@@ -11,7 +11,7 @@
 
 class Goomba : public Enemy {
 public:
-    Goomba(float startX, float startY);
+    Goomba(float startX, float startY, bool isUnderGround = false);
 
     void Start() override;
     void Update() override;
@@ -21,7 +21,7 @@ public:
 private:
     std::shared_ptr<Util::Animation> m_WalkAnimation;
     std::shared_ptr<Util::Image> m_DeadImage;
-    float deathTimer = 0;
+    bool m_isUnderGround;
 };
 
 #endif //MARIO_GOOMBA_HPP
